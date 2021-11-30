@@ -1,0 +1,158 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+light-btn {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+dark-btn {
+    color: black;
+    margin: 0;
+    background-color: darkgrey;
+    border-color: black;
+}
+#navbar > ul.nav.navbar-nav.navbar-right > li > a {
+    height: 50px;
+    margin-top: 0px;
+}
+button.btn.btn-danger.navbar-btn:hover {
+    color: currentcolor;
+    background-color: white;
+    border-color: black;
+}
+body > div > div > nav > div > div.navbar-header > a > img {
+    width: auto;
+    height: 90px;
+}
+a.navbar-brand {
+    height: 90px;
+    padding: 0;
+}
+#navbar > ul > li > a {
+    padding: 4px 14px;
+}
+body > div > div > nav > div > div.navbar-header > a > img:nth-child(2) {
+    display:  none;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: -27px;
+}
+@media (min-width: 768px){
+  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 20px;
+}
+}
+
+
+/* FOOTER CSS
+-------------------------------------------------- */
+footer {
+  font-family: monospace;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 15px;
+  position: relative;
+  /* color: #9d9d9d; */
+  /* background-color: #f8f8f8; */
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer p {
+  /* color: black; */
+  padding: 5px;
+  margin: 0;
+}
+
+footer>div {
+  margin: 5px;
+}
+
+.social-links {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+body>footer>div.row>div>ul>li>a:hover img {
+  position: relative;
+  top: -5px;
+}
+
+body > footer > div:nth-child(1) > p{
+  font-size: 1.3em;
+}
+.light-footer {
+    background-color: #f8f8f8;
+    color: #777777;
+}
+.dark-footer {background-color: #222222;color: #999999;}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  #navbar > ul > li > a {
+    padding: 20px 32px;
+  }
+
+}
