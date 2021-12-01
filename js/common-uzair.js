@@ -1,4 +1,3 @@
-//add class active to nav elements
 $(()=>{
     $("#nav-menu-btn").click(()=>{
         var n = $("#navbar");
@@ -8,7 +7,7 @@ $(()=>{
         else
             n.addClass('collapse');
     });
-
+    //add class active to nav elements
     var listItem = $("#navbar > ul:first-child > li > a");
     var url = window.location.href;
     var activePage = url;
@@ -19,9 +18,18 @@ $(()=>{
             $(this).closest("li").addClass("active");
         }
     });
-
+    // dark mode functionality
     var darkButton = $("#dark-mode-btn");
     darkButton.click(()=>{
+        var body = $('body');
+        if(body.hasClass('dark-body')){
+            body.removeClass('dark-body');
+            body.addClass('light=body');
+        }
+        else{
+            body.removeClass('light-body');
+            body.addClass('dark-body');
+        }
         var n = $('nav')
         if(n.hasClass('navbar-inverse')){
             n.removeClass('navbar-inverse');
@@ -44,7 +52,7 @@ $(()=>{
             f.removeClass('dark-footer');
             f.addClass('light-footer');
         }
-
+        // toggles between black and white images of logo
         $('.logo').toggle();
     });
 });

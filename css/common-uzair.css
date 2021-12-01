@@ -3,8 +3,15 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   color: #5a5a5a;
+}
+body.light-body {
+    background: gainsboro;
+}
+
+body.dark-body {
+    background-color: darkgray;
 }
 
 
@@ -76,7 +83,19 @@ body > div > div > nav > div > div.navbar-header > a > img:nth-child(2) {
     margin-left: 20px;
 }
 }
+/* Featurettes
+------------------------- */
 
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
 
 /* FOOTER CSS
 -------------------------------------------------- */
