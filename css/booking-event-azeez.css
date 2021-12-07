@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dcdcdc;
+    margin: 0;
+    width: 100%;
+    /* border: 3px solid blue; */
+    padding: 0px 0px;
+}
+
+#form {
+    padding-left: 70px;
+    position: relative;
+    padding-bottom: 15px;
+    /* labels need this on the their parent element */
+    width: 100%;
+    /* background-color: #dcdcdc; */
+    padding: 30px 100px;
+    border-style: outset;
+    margin: 27px 34px 28px 9px;
+}
+#footerWrapper{
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
+.checkboxes{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+#form-action{
+    margin-top: 25px;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 10px;
+    padding: 1px;
+    /* leave a space to position for the labels */
+}
+
+fieldset {
+    vertical-align: middle;
+}
+
+legend {
+    color: blue;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+
+label {
+    /* float: left; */
+    width: 90px;
+}
+
+input, select {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: .5em;
+}
+
+input {
+    width: 14em;
+}
+
+input.left {
+    width: 1em;
+    padding-left: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+input.last {
+    margin-bottom: 1em;
+}
+
+#adults, #children {
+    width: 35px;
+}
+
+#smoking {
+    width: 1em;
+    margin-left: 0;
+}
+
+.submit {
+    margin-left: 0;
+    width: 10em;
+}
+
+.mandatory {
+    color: red;
+}
+
+.errorClass {
+    outline: none !important;
+    border: 1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.topErrorEnable {
+    display: none;
+}
+#wrapIt{
+    width: 100%;
+    /* background-color: #dcdcdc; */
+    padding: 2px 100px;
+    border-style: outset;
+    /* margin: 5px 30px 5px 9px; */
+}

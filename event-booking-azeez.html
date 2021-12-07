@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" type="image/x-icon" href="images\logo\d91c9878affc4b70f0fca2ea87ae4af1-32bits-32.png">
+    <meta name="description" content="">
+    <meta name="azeez" content="">
+    <link rel="canonical" href="">
+    <title>Tour Ontario</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom styles -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link href="css/common-uzair.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/booking-event-azeez.css">
+    <script src="js/event-booking-azeez.js"></script>
+    <script src="js/common-uzair.js"></script>
+
+</head>
+
+<body>
+    <!-- NAVBAR================================================== -->
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo" src="images\logo\Tour Ontario -logos_black.png" alt="">
+                            <img class="logo" src="images\logo\Tour Ontario -logos_white.png" alt="">
+                        </a>
+                        <button id="nav-menu-btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>
+                                    <p>Home</p>
+                                </a></li>
+                            <li><a href="event-booking-azeez.html"><span class="glyphicon glyphicon-bookmark"></span>
+                                    <p>Events Booking</p>
+                                </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-bed"></span>
+                                    <p>Hotels</p>
+                                </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-cutlery"></span>
+                                    <p>Restaurants</p>
+                                </a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>
+                                    <p>About Us</p>
+                                </a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id="dark-mode-btn"><a href="#"><span class="glyphicon glyphicon-adjust"></span>
+                                    <p>Dark Mode</p>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <!-- MAIN SECTION PLS ENTER YOUR CODE HERE================================================== -->
+
+    <div id="wrapIt">
+        <div class="alert alert-danger topErrorEnable" role="alert">
+        </div>
+        <div class="alert alert-success topErrorEnable" role="alert">
+        </div>
+        
+        <div id="form" class="form-group">
+            <h1>Booking</h1>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" autofocus class='test'>
+                <span class="mandatory">*</span>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" class='test'>
+                <span class="mandatory">*</span><br>
+                <label for="phone">Phone:</label>
+                <input type="text" name="phone" id="phone" placeholder="999-999-9999" class='test'>
+                <span class="mandatory">*</span><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>General Information</legend>
+                <label for="arrival_date">Arrival date:</label>
+                <input type="text" name="arrival_date" id="arrival_date" class='test' placeholder="mm/dd/yyyy">
+                <span class="mandatory">*</span><br>
+                <label>Adults:</label>
+                <select name="adults" id="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br>
+                <label>Children:</label>
+                <select name="children" id="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Room type:</label>
+                <div class="checkboxes">
+                    <div class="col">Kayaking<input type="checkbox" id="kayaking" name="kayaking"></div>
+                    <div class="col">Watersport<input type="checkbox" id="watersport" name="watersport"></div>
+                    <div class="col">Bungee<input type="checkbox" id="bungee" name="bungee" value="Yes"></div>
+                    <div class="col">Skydiving<input type="checkbox" id="skydiving" name="skydiving" value="Yes"></div>
+                    <div class="col">Parachting<input type="checkbox" id="parachting" name="parachting" value="Yes"></div>
+                    <div class="col">Fishing<input type="checkbox" id="fishing" name="fishing" value="Yes"></div>
+                </div>
+            </fieldset>
+            <fieldset id="form-action">
+                <input type="button" id="submit" value="Submit Request" class="btn btn-primary">
+                <input type="button" id="clear" value="Delete All Records" class="btn btn-danger"><br>
+            </fieldset>
+        </div>
+        <!-- fieldset>legend+table>(tr>th*3) -->
+        <fieldset>
+            <legend>Guest Bookings</legend>
+            <table class="table table-hover table-bordered table-striped">
+                <thead class ='thead-dark'>
+                    <tr>
+                        <th>#ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Arrival Date</th>
+                        <th>Adults</th>
+                        <th>Children</th>
+                        <th>Kayaking</th>
+                        <th>WaterSport</th>
+                        <th>Bungee</th>
+                        <th>Skydiving</th>
+                        <th>Parachuting</th>
+                        <th>Fishing</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id='storeTable'>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+
+    <!-- FOOTER================================================== -->
+        <footer class="light-footer">
+            <div>
+                <p>Connect With Us</p>
+            </div>
+            <div class="row">
+                <div>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <img src="icons/png/002-twitter.png" alt="twitter icon">
+                                <!-- <div class="overlay">
+                      <div class="text">Hello World</div>
+                    </div> -->
+                            </a>
+                        </li>
+                        <li><a href="#"><img src="icons/png/004-facebook.png" alt="facebook icon"></a></li>
+                        <li><a href="#"><img src="icons/png/003-instagram.png" alt="instagram icon"></a></li>
+                        <li><a href="#"><img src="icons/png/005-youtube.png" alt="youtube icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>Icons made by <a href="https://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a
+                        href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></p>
+            </div>
+            <div>
+                <p>&copy;Copyrights TourOntario. All rights reserved.</p>
+            </div>
+        </footer>
+
+</body>
+
+</html>
