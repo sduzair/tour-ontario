@@ -7,4 +7,4 @@
 ## Technologies
   - jQuery
   - Bootstrap
-Hotels Booking page contributed by @(https://github.com/azeez-ahmad)
+Hotels Booking page contributed by @[https://github.com/azeez-ahmad](https://github.com/azeez-ahmad)
